@@ -95,6 +95,3 @@ Tunggu hingga proses build selesai. Jika berhasil, aplikasi Kalkulator BMI akan 
 
 ---
 
-**Catatan:** Interpretasi BMI perlu mempertimbangkan usia dan tahap pertumbuhan. Kategori BMI orang dewasa tidak dapat langsung diterapkan kepada remaja.
-
-
