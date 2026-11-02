@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<VBox xmlns="http://javafx.com/javafx/21"
+      xmlns:fx="http://javafx.com/fxml/1"
+      fx:controller="controller.BmiController"
+      alignment="CENTER"
+      spacing="15"
+      style="-fx-background-color: #f4f7fb;">
+
+    <padding>
+        <Insets top="30" right="35" bottom="30" left="35"/>
+    </padding>
+
+    <Label text="KALKULATOR BMI"
+           style="-fx-font-size: 26px;
+                  -fx-font-weight: bold;
+                  -fx-text-fill: #263b59;"/>
+
+    <Label text="Hitung Indeks Massa Tubuh Kamu"
+           style="-fx-font-size: 14px;
+                  -fx-text-fill: #718096;"/>
+
+    <Separator/>
+
+    <Label text="Berat Badan (kg)"
+           style="-fx-font-weight: bold;"/>
+
+    <TextField fx:id="tfBerat"
+               promptText="Masukkan berat badan"
+               maxWidth="300"/>
+
+    <Label text="Tinggi Badan (cm)"
+           style="-fx-font-weight: bold;"/>
+
+    <TextField fx:id="tfTinggi"
+               promptText="Masukkan tinggi badan"
+               maxWidth="300"/>
+
+    <Label text="Jenis Kelamin"
+           style="-fx-font-weight: bold;"/>
+
+    <fx:define>
+        <ToggleGroup fx:id="groupGender"/>
+    </fx:define>
+
+    <HBox alignment="CENTER" spacing="25">
+        <RadioButton fx:id="rbPria"
+                     text="Pria"
+                     toggleGroup="$groupGender"
+                     selected="true"/>
+
+        <RadioButton fx:id="rbWanita"
+                     text="Wanita"
+                     toggleGroup="$groupGender"/>
+    </HBox>
+
+    <HBox alignment="CENTER" spacing="12">
+        <Button text="Hitung BMI"
+                onAction="#hitung"
+                style="-fx-background-color: #2878d0;
+                       -fx-text-fill: white;
+                       -fx-font-weight: bold;"
+                prefWidth="130"/>
+
+        <Button text="Reset"
+                onAction="#reset"
+                prefWidth="100"/>
+    </HBox>
+
+    <Separator/>
+
+    <Label text="HASIL PERHITUNGAN"
+           style="-fx-font-size: 16px;
+                  -fx-font-weight: bold;
+                  -fx-text-fill: #263b59;"/>
+
+    <Label fx:id="lblHasil"
+           wrapText="true"
+           style="-fx-font-size: 18px;"/>
+
+    <Label fx:id="lblKategori"
+           wrapText="true"
+           style="-fx-font-size: 14px;"/>
+
+    <Label fx:id="lblIdeal"
+           wrapText="true"
+           style="-fx-font-size: 13px;"/>
+
+</VBox>

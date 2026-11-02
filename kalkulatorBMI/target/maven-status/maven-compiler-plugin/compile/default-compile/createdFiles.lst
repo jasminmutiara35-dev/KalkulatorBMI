@@ -1,0 +1,6 @@
+model\BmiModel$JenisKelamin.class
+model\BmiModel.class
+controller\BmiController.class
+application\KalkulatorBMIController.class
+com\mycompany\kalkulatorbmi\KalkulatorBMI.class
+main\Main.class
