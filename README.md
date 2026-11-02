@@ -21,6 +21,7 @@ Aplikasi Kalkulator BMI merupakan aplikasi desktop berbasis Java yang dikembangk
 - Scene Builder
 
 ## Tampilan Aplikasi
+<img width="680" height="1011" alt="Screenshot 2026-11-02 094848" src="https://github.com/user-attachments/assets/c08bf51b-dbc1-4d37-85d7-8db40baab049" />
 
 
 
